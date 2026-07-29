@@ -380,10 +380,8 @@ svg {
 
 .price-row {
   min-height: 150px;
-  display: grid;
-  grid-template-columns: 1fr auto;
+  display: flex;
   align-items: center;
-  gap: 28px;
   border-bottom: 1px solid var(--line);
 }
 
@@ -400,14 +398,6 @@ svg {
   color: var(--ink-soft);
   font-size: 14px;
   line-height: 1.5;
-}
-
-.price-row strong {
-  max-width: 190px;
-  color: var(--slate);
-  font-size: 16px;
-  line-height: 1.35;
-  text-align: right;
 }
 
 .pricing-note {
@@ -975,13 +965,7 @@ footer p {
 
   .price-row {
     min-height: 142px;
-    grid-template-columns: 1fr;
-    gap: 12px;
     padding: 26px 0;
-  }
-
-  .price-row strong {
-    text-align: left;
   }
 
   .pricing-note {
