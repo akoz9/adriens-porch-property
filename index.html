@@ -35,6 +35,7 @@
           <a href="#services">Services</a>
           <a href="#area">Service area</a>
           <a href="#about">About</a>
+          <a href="#reviews">Reviews</a>
           <a class="button button-small" href="#quote">Get a free quote</a>
         </nav>
       </header>
@@ -171,6 +172,63 @@
         </div>
       </section>
 
+      <section class="reviews section" id="reviews">
+        <div class="reviews-heading">
+          <div>
+            <p class="section-number">04</p>
+            <h2>Customer<br />reviews</h2>
+          </div>
+          <p>Have I helped around your home? Share your experience. Every review is checked before it appears publicly.</p>
+        </div>
+        <div class="reviews-layout">
+          <div class="review-wall">
+            <p class="review-wall-label">From local customers</p>
+            <div class="review-empty">
+              <svg class="porch-mark" viewBox="0 0 64 52" aria-hidden="true">
+                <path d="M5 23 32 3l27 20M12 21v26M52 21v26M19 23v24M45 23v24M9 47h49M16 18h32" />
+              </svg>
+              <h3>Be the first to share your experience.</h3>
+              <p>Approved customer reviews will appear here.</p>
+            </div>
+          </div>
+          <div class="review-form-card">
+            <p class="review-form-label">Leave a review</p>
+            <h3>How did it go?</h3>
+            <form id="customer-review-form" action="https://formsubmit.co/ajax/abearkos@gmail.com" method="POST">
+              <input type="hidden" name="_subject" value="New review for Adrien’s Porch & Property" />
+              <input type="hidden" name="_template" value="table" />
+              <input class="review-honeypot" type="text" name="_honey" tabindex="-1" autocomplete="off" />
+              <label>
+                First name
+                <input required name="first_name" autocomplete="given-name" maxlength="40" />
+              </label>
+              <label class="last-initial">
+                Last initial
+                <input required name="last_initial" maxlength="1" pattern="[A-Za-z]" inputmode="text" aria-describedby="last-initial-help" />
+                <small id="last-initial-help">One letter</small>
+              </label>
+              <label class="review-field-wide">
+                Neighborhood <span>(optional)</span>
+                <input name="neighborhood" autocomplete="address-level3" maxlength="80" />
+              </label>
+              <label class="review-field-wide">
+                Your review
+                <textarea required name="review" rows="6" maxlength="1200" placeholder="Tell neighbors about the work Adrien did for you."></textarea>
+              </label>
+              <label class="review-consent review-field-wide">
+                <input required type="checkbox" name="public_display_consent" value="Yes" />
+                <span>I agree that my review may be displayed publicly using my first name, last initial, and neighborhood.</span>
+              </label>
+              <button class="button button-green review-submit review-field-wide" type="submit">
+                Send my review
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M14 7l5 5-5 5" /></svg>
+              </button>
+              <p class="review-status review-field-wide" id="review-status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+
       <section class="quote" id="quote">
         <div class="quote-heading">
           <svg class="porch-mark" viewBox="0 0 64 52" aria-hidden="true">
@@ -212,7 +270,7 @@
         </a>
         <nav aria-label="Footer navigation">
           <a href="#services">Services</a><a href="#area">Service area</a>
-          <a href="#about">About</a><a href="#quote">Quote</a>
+          <a href="#about">About</a><a href="#reviews">Reviews</a><a href="#quote">Quote</a>
         </nav>
         <p>Reliable help for Los Angeles homes.</p>
       </footer>
