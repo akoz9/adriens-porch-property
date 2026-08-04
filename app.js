@@ -23,14 +23,14 @@ form?.addEventListener("submit", (event) => {
   event.preventDefault();
   const data = new FormData(form);
   requestText.textContent =
-    `Hi Adrien — I’d like a quote from Adrien’s Porch & Property.\n\n` +
+    `Hi Adrien — I’d like help with a job around my home.\n\n` +
     `Name: ${data.get("name")}\n` +
     `Neighborhood: ${data.get("neighborhood")}\n` +
     `Contact: ${data.get("contact")}\n` +
     `Job: ${data.get("job")}`;
   form.hidden = true;
   review.hidden = false;
-  copyButton.textContent = "Copy request";
+  copyButton.textContent = "Copy message";
   review.focus();
 });
 
