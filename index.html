@@ -174,61 +174,76 @@
 
       <section class="reviews section" id="reviews">
         <div class="reviews-heading">
-          <div>
-            <p class="section-number">04</p>
-            <h2>Customer<br />reviews</h2>
-          </div>
-          <p>Have I helped around your home? Share your experience. Every review is checked before it appears publicly.</p>
+          <p class="review-eyebrow">Testimonials</p>
+          <h2>Don’t take our word for it.<br />Hear it from our neighbors.</h2>
+          <p class="reviews-intro">Reliable help is built on trust. Here’s what local customers say about working with Adrien.</p>
         </div>
-        <div class="reviews-layout">
-          <div class="review-wall">
-            <p class="review-wall-label">From local customers</p>
-            <div class="review-list">
-              <article class="review-card">
-                <blockquote>Adrien is the best! He always has a smile on his face and is hard working with a can do attitude. I cleared my household to do list with Adrien’s help. Will definitely hire him again.</blockquote>
-                <p class="review-author">Angela K.</p>
-              </article>
-              <article class="review-card">
-                <blockquote>Adrian is truly the best—he does it all! After I moved, he helped me assemble tons of furniture. He also walks and dog-sits my dogs, and they absolutely love him. He is always on time and incredibly trustworthy. I can’t say enough great things about him!</blockquote>
-                <p class="review-author">Lori B.</p>
-              </article>
+
+        <div class="review-carousel" aria-label="Customer testimonials" tabindex="0">
+          <article class="review-card">
+            <div class="review-avatar" aria-hidden="true">AK</div>
+            <blockquote>Adrien is the best! He always has a smile on his face and is hard working with a can do attitude. I cleared my household to do list with Adrien’s help. Will definitely hire him again.</blockquote>
+            <div class="review-person">
+              <strong>Angela K.</strong>
+              <span>Local customer</span>
             </div>
-          </div>
-          <div class="review-form-card">
+          </article>
+
+          <figure class="review-feature">
+            <img src="./images/adrien-portrait.jpg" alt="Adrien Kosinski" loading="lazy" />
+            <figcaption>
+              <strong>Adrien Kosinski</strong>
+              <span>Reliable · Hardworking · Local</span>
+            </figcaption>
+          </figure>
+
+          <article class="review-card">
+            <div class="review-avatar" aria-hidden="true">LB</div>
+            <blockquote>Adrian is truly the best—he does it all! After I moved, he helped me assemble tons of furniture. He also walks and dog-sits my dogs, and they absolutely love him. He is always on time and incredibly trustworthy. I can’t say enough great things about him!</blockquote>
+            <div class="review-person">
+              <strong>Lori B.</strong>
+              <span>Local customer</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="review-form-card" id="leave-a-review">
+          <div class="review-form-heading">
             <p class="review-form-label">Leave a review</p>
             <h3>How did it go?</h3>
-            <form id="customer-review-form" action="https://formsubmit.co/ajax/abearkos@gmail.com" method="POST">
-              <input type="hidden" name="_subject" value="New review for Adrien’s Porch & Property" />
-              <input type="hidden" name="_template" value="table" />
-              <input class="review-honeypot" type="text" name="_honey" tabindex="-1" autocomplete="off" />
-              <label>
-                First name
-                <input required name="first_name" autocomplete="given-name" maxlength="40" />
-              </label>
-              <label class="last-initial">
-                Last initial
-                <input required name="last_initial" maxlength="1" pattern="[A-Za-z]" inputmode="text" aria-describedby="last-initial-help" />
-                <small id="last-initial-help">One letter</small>
-              </label>
-              <label class="review-field-wide">
-                Neighborhood <span>(optional)</span>
-                <input name="neighborhood" autocomplete="address-level3" maxlength="80" />
-              </label>
-              <label class="review-field-wide">
-                Your review
-                <textarea required name="review" rows="6" maxlength="1200" placeholder="Tell neighbors about the work Adrien did for you."></textarea>
-              </label>
-              <label class="review-consent review-field-wide">
-                <input required type="checkbox" name="public_display_consent" value="Yes" />
-                <span>I agree that my review may be displayed publicly using my first name, last initial, and neighborhood.</span>
-              </label>
-              <button class="button button-green review-submit review-field-wide" type="submit">
-                Send my review
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M14 7l5 5-5 5" /></svg>
-              </button>
-              <p class="review-status review-field-wide" id="review-status" aria-live="polite"></p>
-            </form>
+            <p>Share your experience with Adrien. Every review is checked before it appears publicly.</p>
           </div>
+          <form id="customer-review-form" action="https://formsubmit.co/ajax/abearkos@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="New review for Adrien’s Porch & Property" />
+            <input type="hidden" name="_template" value="table" />
+            <input class="review-honeypot" type="text" name="_honey" tabindex="-1" autocomplete="off" />
+            <label>
+              First name
+              <input required name="first_name" autocomplete="given-name" maxlength="40" />
+            </label>
+            <label class="last-initial">
+              Last initial
+              <input required name="last_initial" maxlength="1" pattern="[A-Za-z]" inputmode="text" aria-describedby="last-initial-help" />
+              <small id="last-initial-help">One letter</small>
+            </label>
+            <label class="review-field-wide">
+              Neighborhood <span>(optional)</span>
+              <input name="neighborhood" autocomplete="address-level3" maxlength="80" />
+            </label>
+            <label class="review-field-wide">
+              Your review
+              <textarea required name="review" rows="6" maxlength="1200" placeholder="Tell neighbors about the work Adrien did for you."></textarea>
+            </label>
+            <label class="review-consent review-field-wide">
+              <input required type="checkbox" name="public_display_consent" value="Yes" />
+              <span>I agree that my review may be displayed publicly using my first name, last initial, and neighborhood.</span>
+            </label>
+            <button class="button button-green review-submit review-field-wide" type="submit">
+              Send my review
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M14 7l5 5-5 5" /></svg>
+            </button>
+            <p class="review-status review-field-wide" id="review-status" aria-live="polite"></p>
+          </form>
         </div>
       </section>
 
